@@ -2,9 +2,11 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public class Hw8 {
+
+
     //////////////////////////////////////////////////////////////////////////// Задание 1
-    public static void dz1() {
-        int age = 2022; /// выбранный год;
+    public static void dz1(int age) {
+        //int age = 2022; /// выбранный год;
 
         if (yesNo(age)) {
             consoll(age, true);
@@ -32,12 +34,12 @@ public class Hw8 {
     }
 
     //////////////////////////////////////////////////////////////////////////// Задание 2
-    public static void dz2() {
+    public static void dz2(int os,int age) {
         //int currentYear = LocalDate.now().getYear();
-        int clientOS = 1; // 0 — iOS, 1 — Android;
-        int clientDeviceYear = 2013;
+        //int clientOS = 1; // 0 — iOS, 1 — Android;
+        //int clientDeviceYear = 2013;
 
-        clientAge(clientOS, clientDeviceYear);
+        clientAge(os, age);
     }
 
     public static void clientAge(int clientOS, int clientDeviceYear) {
@@ -56,10 +58,10 @@ public class Hw8 {
     }
 
     //////////////////////////////////////////////////////////////////////////// Задание 3
-    public static void dz3() {
+    public static void dz3(float dist) {
 
-        float deliveryDistance = 100f;
-        int day = dayDist(deliveryDistance);
+        //float deliveryDistance = 100f;
+        int day = dayDist(dist);
 
         //dayDist(deliveryDistance);
         if (day == 1) {
@@ -84,9 +86,9 @@ public class Hw8 {
         return day;
     }
     //////////////////////////////////////////////////////////////////////////// Задание 4 (через массив символов)
-    public static void dz4() {
+    public static void dz4(String text1) {
 
-        String text1 = "qwertghj";
+        //String text1 = "qwertghj";
         textDoble1(text1);
     }
     public static void textDoble1(String text1) {
@@ -109,9 +111,9 @@ public class Hw8 {
 
     }
 //////////////////////////////////////////////////////////////////////////// Задание 4_1 (через массив строк и bool)
-    public static void dz4_1 () {
+    public static void dz4_1 (String text) {
 
-        String text = "qwertrtytuyt";
+        //String text = "qwertrtytuyt";
         if (textConvert(text)) {
             System.out.println("Дубль не обнаружен! Строка имеет значение:" + text);
         }
@@ -129,9 +131,9 @@ public class Hw8 {
             return a;
      }
 //////////////////////////////////////////////////////////////////////////// Задание 5
-    public static void dz5 () {
-        int[] arr = {3, 2, 1, 6, 5, 7, 9, 0};
-        arrRevers(arr);
+    public static void dz5 (int[] arr1) {
+        //int[] arr = {3, 2, 1, 6, 5, 7, 9, 0};
+        arrRevers(arr1);
     }
     public static void arrRevers(int[] arr) {
         int size = arr.length;
@@ -142,6 +144,9 @@ public class Hw8 {
         }
         System.out.println(Arrays.toString(arr));
     }
+
+
+
 }
 
 
